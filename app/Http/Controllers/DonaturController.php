@@ -90,7 +90,7 @@ class DonaturController extends Controller
     {
         //
         $donatur1 = donatur::findOrFail($id);
-        return view('donatur.show', compact('donatur1'));
+        return view('donatur.edit', compact('donatur1'));
         
     }
 
@@ -108,7 +108,7 @@ class DonaturController extends Controller
         $validated = $request->validate([
             'nama' => 'required|',
             'email' => 'required',
-            'no' => 'required|unique:donaturs',
+            'no' => 'required|:donaturs',
             'jenis' => 'required',
             'jumlah' => 'required',
             'pembayaran' => 'required',

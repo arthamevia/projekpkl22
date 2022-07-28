@@ -24,6 +24,7 @@
                                         <th>No Telp</th>
                                         <th>Jenis Donasi</th>
                                         <th>Jumlah</th>
+                                        <th>Jenis Pembayaran</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -37,6 +38,7 @@
                                             <td>{{ $data->no }}</td>
                                             <td>{{ $data->jenis }}</td>
                                             <td>{{ $data->jumlah }}</td>
+                                            <td>{{ $data->pembayaran }}</td>
                                             <td>
                                                 <form action="{{ route('donatur.destroy', $data->id) }}" method="post">
                                                     @csrf

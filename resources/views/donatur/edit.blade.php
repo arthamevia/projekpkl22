@@ -35,7 +35,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">No Telp</label>
-                                <input type="number" class="form-control  @error('no') is-invalid @enderror"
+                                <input type="text" class="form-control  @error('no') is-invalid @enderror"
                                     name="no" value="{{ $donatur1->no }}">
                                 @error('no')
                                     <span class="invalid-feedback" role="alert">
@@ -55,7 +55,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Jenis Donasi</label>
-                                <select name="jenis" value="{{ $donatur1->jumlah }}" class="form-control  @error('jenis') is-invalid @enderror">
+                                <select name="jenis" value="{{ $donatur1->jenis }}" class="form-control  @error('jenis') is-invalid @enderror">
                                     <option value="">--Pilih Jenis Donasi--</option>
                                     <option value="zakat">Zakat</option>
                                     <option value="infaq">Infaq</option>
