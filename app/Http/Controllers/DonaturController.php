@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\donatur;
 
 class DonaturController extends Controller
 {
@@ -44,7 +45,7 @@ class DonaturController extends Controller
     {
         //
         $validated = $request->validate([
-            'nama' => 'required|:donaturs',
+            'nama' => 'required',
             'email' => 'required',
             'no' => 'required|unique:donaturs',
             'jenis' => 'required',
@@ -105,7 +106,7 @@ class DonaturController extends Controller
         //
         
         $validated = $request->validate([
-            'nama' => 'required|:donaturs',
+            'nama' => 'required|',
             'email' => 'required',
             'no' => 'required|unique:donaturs',
             'jenis' => 'required',

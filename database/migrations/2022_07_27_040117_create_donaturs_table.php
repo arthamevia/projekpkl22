@@ -17,9 +17,9 @@ class CreateDonatursTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('email');
-            $table->integer('no');
+            $table->string('no')->unique();
             $table->string('jenis');
-            $table->integer('jumlah');
+            $table->string('jumlah');
             $table->string('pembayaran');
             $table->timestamps();
         });

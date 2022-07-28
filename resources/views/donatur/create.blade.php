@@ -44,9 +44,9 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Jumlah</label>
-                                <input type="number" class="form-control  @error('donatur') is-invalid @enderror"
-                                    name="donatur">
-                                @error('donatur')
+                                <input type="number" class="form-control  @error('jumlah') is-invalid @enderror"
+                                    name="jumlah">
+                                @error('jumlah')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -68,13 +68,13 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Jenis Pembayaran</label>
-                                <select name="bayar" class="form-control  @error('bayar') is-invalid @enderror">
+                                <select name="pembayaran" class="form-control  @error('pembayaran') is-invalid @enderror">
                                     <option value="">--Pilih Jenis Pembayaran--</option>
                                     <option value="BCA">BCA</option>
                                     <option value="ABC">ABC</option>
                                     <option value="EFG">EFG</option>
                                 </select>
-                                @error('bayar')
+                                @error('pembayaran')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

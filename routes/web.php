@@ -5,6 +5,7 @@ use App\Http\Controllers\RumahController;
 use App\Http\Controllers\ZakatController;
 use App\Http\Controllers\InfaqController;
 use App\Http\Controllers\ShodakohController;
+use App\Http\Controllers\DonaturController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::resource('rumah', RumahController::class);
 Route::resource('zakat', ZakatController::class);
 Route::resource('infaq', InfaqController::class);
 Route::resource('shodakoh', ShodakohController::class);
+Route::resource('donatur', DonaturController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('home1', RumahController::class);
