@@ -49,18 +49,23 @@
                     <ul class="navbar-nav me-auto">
                         {{-- menu dikiri --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('tugas.index') }}">
-                                Siswa
+                            <a class="nav-link" href="{{ route('zakat.index') }}">
+                                Zakat
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('nilai.index') }}">
-                                Nilai
+                            <a class="nav-link" href="{{ route('infaq.index') }}">
+                                Infaq
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('jurusan.index') }}">
-                                Jurusan
+                            <a class="nav-link" href="{{ route('shodakoh.index') }}">
+                                Shodakoh
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('donatur.index') }}">
+                                Donatur
                             </a>
                         </li>
                     </ul>

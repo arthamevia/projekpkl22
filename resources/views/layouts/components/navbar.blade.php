@@ -8,16 +8,16 @@
         <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Donasi</a>
+        <a href="donatur" class="nav-link">Donasi</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Zakat</a>
+        <a href="zakat" class="nav-link">Zakat</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Infaq</a>
+        <a href="infaq" class="nav-link">Infaq</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Shodaqoh</a>
+        <a href="shodakoh" class="nav-link">Shodaqoh</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
