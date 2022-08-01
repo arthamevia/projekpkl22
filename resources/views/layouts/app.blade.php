@@ -12,9 +12,9 @@
 
     <!-- Scripts -->
     <!-- {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}} -->
-    <script src="{{ asset('js/jsquery-3.5.1.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('DataTables/datatables.min.js') }}"></script>
+    <script src="{{ asset('js/jsquery-3.5.1.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('DataTables/datatables.min.js')}}"></script>
     <script>
         $(document).ready(function() {
             $('#dataTable').DataTable();
@@ -49,23 +49,18 @@
                     <ul class="navbar-nav me-auto">
                         {{-- menu dikiri --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('zakat.index') }}">
-                                Zakat
+                            <a class="nav-link" href="{{ route('tugas.index') }}">
+                                Siswa
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('infaq.index') }}">
-                                Infaq
+                            <a class="nav-link" href="{{ route('nilai.index') }}">
+                                Nilai
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('shodakoh.index') }}">
-                                Shodakoh
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('donatur.index') }}">
-                                Donatur
+                            <a class="nav-link" href="{{ route('jurusan.index') }}">
+                                Jurusan
                             </a>
                         </li>
                     </ul>

@@ -22,8 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-Route::get('/test-admin', function(){
+Route::get('/admin', function(){
     return view('layouts.admin');
 });
 Route::resource('rumah', RumahController::class);
@@ -34,3 +33,51 @@ Route::resource('donatur', DonaturController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('home1', RumahController::class);
+
+Route::get('/home2',function(){
+
+    return view('TampilanUser.home',[
+        "title" => "Home"
+    ]);
+});
+
+Route::get('/zakat',function(){
+
+    return view('TampilanUser.zakat',[
+        "title" => "Zakat"
+    ]);
+});
+
+Route::get('/sedekah',function(){
+
+    return view('TampilanUser.sedekah',[
+        "title" => "Sedekah"
+    ]);
+});
+
+Route::get('/infaq',function(){
+
+    return view('TampilanUser.infaq',[
+        "title" => "Infaq"
+    ]);
+});
+
+Route::get('/donasi',function(){
+
+    return view('TampilanUser.donasi',[
+        "title" => "Donasi"
+    ]);
+
+});
+
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// route backend atau admin
+Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function (){
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+});

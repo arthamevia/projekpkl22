@@ -1,8 +1,16 @@
-<div class="sidebar">
+
+<div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+      <a href="admin">
+       <!-- <img src="{{asset('assets/images/ruang.png')}}" class="logo-icon" alt="logo icon"> -->
+       <h5 class="logo-text">ZIS Admin</h5>
+     </a>
+   </div>
+   </div><div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('assets/dist/img/zis.webp')}}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{asset('assets/dist/img/ruang.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Ruang ZIS</a>
@@ -36,13 +44,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="./home2" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Home</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="zakat.index" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Zakat</p>
                 </a>

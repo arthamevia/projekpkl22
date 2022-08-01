@@ -82,6 +82,7 @@ class ShodakohController extends Controller
         //
         $shodakoh1 = shodakoh::findOrFail($id);
         return view('shodakoh.edit', compact('shodakoh1'));
+        return view('tampilanuser.sedekah', compact('shodakoh1'));
     }
 
     /**
