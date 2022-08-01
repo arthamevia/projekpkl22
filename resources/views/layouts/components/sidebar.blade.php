@@ -1,4 +1,3 @@
-
 <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="admin">
