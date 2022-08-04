@@ -11,11 +11,11 @@
                             <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/zakat">zakat</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/infaq">Infaq</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi">Donasi</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/zakat2">zakat</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/infaq2">Infaq</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi2">Donasi</a></li>
                                 </ol>
-                                <a href="/donasi" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
+                                <a href="/donasi2" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
                             </nav>
                         </div>
                     </div>

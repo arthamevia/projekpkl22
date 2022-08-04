@@ -10,8 +10,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="/home2" class="nav-item nav-link {{ ($title === 'Home') ? 'active' : '' }}">Home</a>
-                        <a href="/infaq" class="nav-item nav-link {{ ($title === 'Infaq') ? 'active' : '' }}">Infaq</a>
-                        <a href="/sedekah" class="nav-item nav-link {{ ($title === 'Sedekah') ? 'active' : '' }}">Sedekah</a>
+                        <a href="/infaq2" class="nav-item nav-link {{ ($title === 'Infaq2') ? 'active' : '' }}">Infaq</a>
+                        <a href="/sedekah2" class="nav-item nav-link {{ ($title === 'Sedekah2') ? 'active' : '' }}">Sedekah</a>
                         <!-- <div class="nav-item dropdown">
                             <a href="/zakat" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Zakat</a>
                             <div class="dropdown-menu m-0">
@@ -19,8 +19,8 @@
                                 <a href="testimonial.html" class="dropdown-item">Zakat Maal</a>
                             </div>
                         </div> -->
-                        <a href="/zakat" class="nav-item nav-link {{ ($title === 'Zakat') ? 'active' : '' }}">Zakat</a>
-                        <a href="/donasi" class="nav-item nav-link {{ ($title === 'Donasi') ? 'active' : '' }}">Donasi</a>
+                        <a href="/zakat2" class="nav-item nav-link {{ ($title === 'Zakat2') ? 'active' : '' }}">Zakat</a>
+                        <a href="/donasi2" class="nav-item nav-link {{ ($title === 'Donasi2') ? 'active' : '' }}">Donasi</a>
                     </div>
                 </div>
             </nav>

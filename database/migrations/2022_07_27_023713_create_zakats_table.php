@@ -16,7 +16,7 @@ class CreateZakatsTable extends Migration
         Schema::create('zakats', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('artikel');
+            $table->text('artikel');
             $table->date('tanggal');
             $table->timestamps();
         });

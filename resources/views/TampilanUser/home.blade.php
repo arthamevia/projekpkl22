@@ -165,11 +165,15 @@
         <div class="container wow fadeInUp" data-wow-delay="0.1s">
 
             <h2>judul..</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit 
+                numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate 
+                quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere 
+                tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. 
+                Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni 
+                quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium 
+                sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse 
+                eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
           <br>
-          <h2>judul..</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium ullam incidunt reprehenderit numquam alias amet quo labore? Temporibus dolores debitis cupiditate dolorum quaerat voluptate quibusdam natus voluptates quod a ratione, dolor eveniet? Perferendis consectetur, excepturi, facere tempore omnis iusto ut quibusdam optio facilis recusandae sapiente ipsa perspiciatis nam modi. Quidem a, officiis aperiam facilis pariatur amet, quibusdam labore dicta distinctio officia magni quae modi excepturi exercitationem ea earum doloremque praesentium iure, tempore reprehenderit laudantium sed aut sequi. Eum sint autem necessitatibus tempore fugiat dolores totam! Reiciendis, porro aliquid esse eaque, eligendi ducimus distinctio itaque, maiores veniam molestias illo modi?</p>
-          
         </div>
 
 @endsection

@@ -30,6 +30,8 @@ Route::resource('zakat', ZakatController::class);
 Route::resource('infaq', InfaqController::class);
 Route::resource('shodakoh', ShodakohController::class);
 Route::resource('donatur', DonaturController::class);
+Route::get('zakat2', [ZakatController::class,'artikel']);
+// Route::resource('donasi2', DonaturController::class, 'store');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('home1', RumahController::class);
@@ -41,37 +43,28 @@ Route::get('/home2',function(){
     ]);
 });
 
-Route::get('/zakat',function(){
+Route::get('/sedekah2',function(){
 
-    return view('TampilanUser.zakat',[
-        "title" => "Zakat"
-    ]);
-});
-
-Route::get('/sedekah',function(){
-
-    return view('TampilanUser.sedekah',[
+    return view('TampilanUser.sedekah2',[
         "title" => "Sedekah"
     ]);
 });
 
-Route::get('/infaq',function(){
+Route::get('/infaq2',function(){
 
-    return view('TampilanUser.infaq',[
+    return view('TampilanUser.infaq2',[
         "title" => "Infaq"
     ]);
 });
 
-Route::get('/donasi',function(){
+Route::get('/donasi2',function(){
 
-    return view('TampilanUser.donasi',[
+    return view('TampilanUser.donasi2',[
         "title" => "Donasi"
     ]);
-
 });
 
-
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

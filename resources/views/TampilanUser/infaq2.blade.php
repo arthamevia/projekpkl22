@@ -6,16 +6,16 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Zakat</h1>
+                            <h1 class="text-white animated zoomIn">Infaq</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
+                            <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="/home2">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/zakat">zakat</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/infaq">Infaq</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi">Donasi</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/zakat2">zakat</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/infaq2">Infaq</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="/donasi2">Donasi</a></li>
                                 </ol>
-                                <a href="/donasi" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
+                                <a href="/donasi2" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Donasi</a>
 
                             </nav>
                         </div>
@@ -38,12 +38,13 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
                             <h6 class="position-relative text-primary ps-4">Pengertian</h6>
-                            <h2 class="mt-2">Pengertian Zakat</h2>
+                            <h2 class="mt-2">Pengertian Infaq</h2>
                         </div>
-                        <p class="mb-4">Menurut aturan tersebut, zakat adalah harta wajib dikeluarkan oleh 
-                            seorang muslim atau badan usaha yang dimiliki orang Islam untuk diberikan kepada 
-                            yang berhak menerima sesuai dengan syariat Islam. Melansir situs Badan Amil Zakat 
-                            Nasional (Baznas), zakat artinya suci, baik, berkah, tumbuh, dan berkembang.</p>
+                        <p class="mb-4">Kata Infaq berasal dari kata anfaqo-yunfiqu, artinya membelanjakan atau membiayai, 
+                            arti infaq menjadi khusus ketika dikaitkan dengan upaya realisasi perintah-perintah Allah.
+                            Infaq tidak harus diberikan kepada mustahik tertentu, melainkan kepada siapapun misalnya orang tua, 
+                            kerabat, anak yatim, orang miskin, atau orang-orang yang sedang dalam perjalanan. Dengan demikian 
+                            pengertian infaq adalah pengeluaran suka rela yang di lakukan seseorang. </p>
                         
                     </div>
                     <div class="col-lg-6">
@@ -61,13 +62,10 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
                             <h6 class="position-relative text-primary ps-4">Tujuan</h6>
-                            <h2 class="mt-2">Tujuan Bersedekah</h2>
+                            <h2 class="mt-2">Tujuan Infaq</h2>
                         </div>
-                        <p class="mb-4">Merujuk pada Fatwa MUI, tujuan mengeluarkan zakat fitrah adalah pertama, 
-                            untuk menyucikan jiwa. Sementara tujuan zakat fitrah kedua untuk memberi makan orang miskin. 
-                            Secara umum, zakat sendiri berasal dari bentuk kata 'zaka' yang berarti suci, baik, berkah, 
-                            tumbuh, dan berkembang. Zakat bisa membersihkan dan menyucikan orang yang menunaikannya karena zakat membersihkan 
-                            akhlaknya dan menyucikan serta membersihkan jiwanya dari rasa bakhil dan berbagai akhlak tercela.</p>
+                        <p class="mb-4">Mendermakan atau memberi rezeki (karunia) atau 
+                            menafkahkan sesuatu kepada orang lain berdasarkan keikhlasan dan karena Allah Swt. Semata.</p>
                         
                     </div>
                 </div>

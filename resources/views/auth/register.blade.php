@@ -106,7 +106,7 @@
           Sign up using Google+
         </a>
       </div>
-
+      
       <a href="login" class="text-center">I already have a membership</a>
     </div>
     <!-- /.form-box -->

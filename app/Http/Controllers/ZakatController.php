@@ -17,6 +17,13 @@ class ZakatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function artikel(){
+        $zakat1 = zakat::all();
+        return view('TampilanUser.zakat2', compact('zakat1'),[
+            "title" => "zakat"
+        ]);
+    }
+
     public function index()
     {
         //

@@ -49,21 +49,27 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="zakat.index" class="nav-link">
+                <a href="zakat" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Zakat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="infaq" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Infaq</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="shodakoh" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Shodaqoh</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="donatur" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Donasi</p>
                 </a>
               </li>
             </ul>
