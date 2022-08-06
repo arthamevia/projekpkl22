@@ -31,7 +31,7 @@
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5">
+        <!-- <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -73,7 +73,12 @@
         </div>
         </div>
         </div>
-        <!-- About End -->
+        About End -->
+
+        @foreach($sedekah as $data)
+            <h3>{{$data->judul}}</h3>
+            <p>{{$data->artikel}}</p>
+        @endforeach
 
 
         

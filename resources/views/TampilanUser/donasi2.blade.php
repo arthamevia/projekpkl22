@@ -23,145 +23,47 @@
             </div>
         </div>
         
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                @if (session('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
+                @endif
+            </div>
+        </div>
 
         <section id="donasi2">
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4"> Donasi</h6>
-                            <h2 class="mt-2">Data Donasi</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                           <form action="{{ route('donatur.store') }}" method="post">
+                        <form action="{{ route('donasi2.store') }}" method="post">
                             @csrf
-                            <div class="mb-3">
-                                <label class="form-label">Nama</label>
-                                <input type="text" class="form-control  @error('nama') is-invalid @enderror"
-                                    name="nama">
-                                @error('nama')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control  @error('email') is-invalid @enderror"
-                                    name="email">
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">No Telp</label>
-                                <input type="number" class="form-control  @error('no') is-invalid @enderror"
-                                    name="no">
-                                @error('no')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Jumlah</label>
-                                <input type="number" class="form-control  @error('jumlah') is-invalid @enderror"
-                                    name="jumlah">
-                                @error('jumlah')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Jenis Donasi</label>
-                                <select name="jenis" class="form-control  @error('jenis') is-invalid @enderror">
-                                    <option value="">--Pilih Jenis Donasi--</option>
-                                    <option value="zakat">Zakat</option>
-                                    <option value="infaq">Infaq</option>
-                                    <option value="sedekah">Sedekah</option>
-                                </select>
-                                @error('jenis')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Jenis Pembayaran</label>
-                                <select name="pembayaran" class="form-control  @error('pembayaran') is-invalid @enderror">
-                                    <option value="">--Pilih Jenis Pembayaran--</option>
-                                    <option value="BCA">BCA</option>
-                                    <option value="Mandiri">Mandiri</option>
-                                    <option value="Gopay">Gopay</option>
-                                </select>
-                                @error('pembayaran')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-primary" type="submit" name="kirim">Save</button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-
-        <section>
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-
-                        <?php
-                            if (isset($_POST['kirim'])) {
-                                $nama = $_POST['nama'];
-                                $email = $_POST['email'];
-                                $no = $_POST['no'];
-                                $jumlah = $_POST['jumlah'];
-                                $jenis = $_POST['jenis'];
-                                $pembayaran = $_POST['pembayaran'];
-                                ?>
-                                <p><?php $nama ?></p>
-
-                                <?php
-                            }
-                        ?>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        
-
- 
-@endsection
-<!-- <form action="{{route('donatur.index')}}">
                                 <div class="row g-3">
                                     <div class="col-md-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                            <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" 
+                                            id="name" placeholder="Name" required autofocus>
                                             <label for="name">Name</label>
+                                        @error('nama')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" 
+                                            id="email" placeholder="Email"  required>
                                             <label for="email">Email</label>
                                         </div>
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     
                                     <div class="col-md-6">
@@ -245,4 +147,29 @@
                                         <input type="submit" value="Donasi Sekarang" name="kirim" class="btn btn-primary w-100 py-3">
                                     </div>
                                 </div>
-                            </form> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div><b> Silahkan isi data diatas :)</b></div>
+
+        <section>
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+
+ 
+@endsection

@@ -32,7 +32,7 @@ class DonaturController extends Controller
     {
         //
         
-        return view('TampilanUser.donasi2');
+        return view('donatur.create');
     }
 
     /**
@@ -62,7 +62,7 @@ class DonaturController extends Controller
         $donatur1->pembayaran = $request->pembayaran;
 
         $donatur1->save();
-        return redirect()->route('d')
+        return redirect()->route('tampilanuser.donasi2')
             ->with('success', 'Data berhasil dibuat!');
     }
 

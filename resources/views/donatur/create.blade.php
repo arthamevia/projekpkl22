@@ -15,7 +15,7 @@
                             <div class="mb-3">
                                 <label class="form-label">Nama</label>
                                 <input type="text" class="form-control  @error('nama') is-invalid @enderror"
-                                    name="nama">
+                                    name="nama" autofocus>
                                 @error('nama')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
